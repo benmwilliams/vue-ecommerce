@@ -2,6 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 // import HelloWorld from '@/components/HelloWorld';
 import Home from '@/components/pages/Home';
+import Admin from '@/components/pages/Admin';
+import Cart from '@/components/pages/Cart';
 
 Vue.use(Router);
 
@@ -11,6 +13,16 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home,
+    },
+    {
+      path: '/admin',
+      name: 'Admin',
+      component: Admin,
+    },
+    {
+      path: '/cart',
+      name: 'Cart',
+      component: Cart,
     },
   ],
 });
