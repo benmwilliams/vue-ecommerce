@@ -29,7 +29,7 @@ export default new Router({
           component: New,
         },
         {
-          path: '',
+          path: 'products',
           name: 'Products',
           component: Products,
         },
