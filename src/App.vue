@@ -3,7 +3,7 @@
 
     <nav>
       <div class="container">
-        <ul class="nav__left">
+        <ul class="nav__left" >
           <li><router-link to='/'>Home</router-link></li>
           <li><router-link to='/admin'>Admin</router-link></li>
           <li><router-link to='/cart'>Cart</router-link></li>
@@ -29,5 +29,34 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.container {
+  width: 100%;
+  height: 6rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.nav__left, .nav__left li {
+  float: left;
+}
+
+.nav__left li {
+  list-style: none;
+  font-size: 2rem;
+  margin: .5rem;
+}
+
+.nav__left a,
+.nav__left a:visited,
+.nav__left a:hover,
+.nav__left a:active {
+  color: #fff;
+  text-decoration: none;
 }
 </style>
