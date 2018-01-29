@@ -7,17 +7,10 @@ import router from './router';
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
-const greeting = {
-  template: '<h1>Hi, you</h1>',
-};
 
 new Vue({
   el: '#app',
   router,
-  components: { App, greeting },
-  template: `
-  <div>
-      <greeting/>
-  </div>
-  `,
+  components: { App },
+  template: '<App/>',
 });
