@@ -25,17 +25,24 @@
   .admin-nav {
     width: 25%;
     color: #fff;
-  }
-  .admin-menu li {
-    max-width: 60%;
-    height: 2rem;
-    color: #fff;
-    background-color: rgba(236, 189, 216, .8);
-    margin: 0.5rem 2rem 0.5rem 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-    @media screen and (max-width: 1190px) {
-      font-size: .8rem;
+    position: absolute;
+    li {
+      max-width: 60%;
+      height: 2rem;
+      color: #fff;
+      background-color: rgba(236, 189, 216, .8);
+      margin: 0.5rem 2rem 0.5rem 2rem;
+      list-style: none;
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 1600px) {
+      position: relative;
+      width: 100%;
+      li {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 </style>

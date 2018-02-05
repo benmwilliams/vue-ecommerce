@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -33,6 +33,7 @@ export default {
 
 h1 {
   font-size: 5rem;
+  margin-top: .5rem;
 }
 
 .container {
@@ -46,17 +47,18 @@ h1 {
   float: left;
 }
 
-.nav__left li {
-  list-style: none;
-  font-size: 2rem;
-  margin: .5rem;
-}
-
-.nav__left a,
-.nav__left a:visited,
-.nav__left a:hover,
-.nav__left a:active {
-  color: #fff;
-  text-decoration: none;
+.nav__left {
+  li {
+    list-style: none;
+    font-size: 2rem;
+    margin: .5rem;
+  }
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 </style>
