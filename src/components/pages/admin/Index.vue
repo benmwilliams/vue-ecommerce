@@ -14,7 +14,7 @@
   </div>
 </template>
 
-<style type="text/css">
+<style lang="scss">
   .admin-menu a,
   .admin-menu a:visited,
   .admin-menu a:hover,
@@ -34,5 +34,8 @@
     margin: 0.5rem 2rem 0.5rem 2rem;
     list-style: none;
     font-size: 1.5rem;
+    @media screen and (max-width: 1190px) {
+      font-size: .8rem;
+    }
   }
 </style>
